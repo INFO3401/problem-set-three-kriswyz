@@ -106,17 +106,17 @@ def predictDefaultRisk(myRow,defaults,weights):
 	for feature in df.columns:
 		if feature != 'SeriousDlqin2yrs':
 			sideSize = {}
-			try:
+			if:
 				sideSize['right'] = equalBins(feature,df)[0]
-			except:
+			else:
 				sideSize['right'] = None
-			try:
+			else:
 				sideSize['middle'] = equalBins(feature,df)[1]
-			except:
+			else:
 				sideSize['middle'] = None
-			try:
+			else:
 				sideSize['left'] = equalBins(feature,df)[2]
-			except:
+			else:
 				sideSize['left'] = None
 			binSize[feature] = sideSize
 
